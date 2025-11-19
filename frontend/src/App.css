@@ -1,0 +1,117 @@
+/* 🌿 Full Page Wrapper */
+.nature-bg {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* 🌿 Background Slideshow */
+.slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeSlide 24s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 6s; }
+.slide:nth-child(3) { animation-delay: 12s; }
+.slide:nth-child(4) { animation-delay: 18s; }
+
+@keyframes fadeSlide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* 🌿 Content Centering */
+.content {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 🌿 Glassmorphism Card */
+.card {
+  width: 90%;
+  max-width: 450px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #083d0c;
+  margin-bottom: 15px;
+}
+
+/* 🌿 Input & Button */
+.file-input {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 15px;
+  background: #0a5c1a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0d7d22;
+}
+
+.btn:disabled {
+  background: #6e6e6e;
+  cursor: not-allowed;
+}
+
+/* 🌿 Preview Image */
+.preview-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* 🌿 Prediction Result */
+.result {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #054d12;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
