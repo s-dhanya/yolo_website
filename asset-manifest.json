@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yolo_website/static/css/main.1cee39ba.css",
+    "main.js": "/yolo_website/static/js/main.1dd43a41.js",
+    "static/js/453.d7446e4a.chunk.js": "/yolo_website/static/js/453.d7446e4a.chunk.js",
+    "index.html": "/yolo_website/index.html",
+    "main.1cee39ba.css.map": "/yolo_website/static/css/main.1cee39ba.css.map",
+    "main.1dd43a41.js.map": "/yolo_website/static/js/main.1dd43a41.js.map",
+    "453.d7446e4a.chunk.js.map": "/yolo_website/static/js/453.d7446e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cee39ba.css",
+    "static/js/main.1dd43a41.js"
+  ]
+}
